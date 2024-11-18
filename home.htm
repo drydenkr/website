@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Hub - Football & Basketball</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <title>Sports Gear Store - Football & Basketball</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,85 +38,166 @@
             margin: 20px auto;
             padding: 20px;
         }
-        .section {
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .product-category {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        .section img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
+        .product-card {
+            width: 30%;
+            background-color: white;
             border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
         }
-        .section .text {
-            max-width: 600px;
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card .product-info {
+            padding: 15px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+        }
+        .product-card p {
+            color: #888;
+            font-size: 14px;
+        }
+        .product-card .price {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .product-card .add-to-cart {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+        .product-card .add-to-cart:hover {
+            background-color: #218838;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Sports Hub</h1>
-    <p>Your Go-To Source for Football & Basketball News</p>
+    <h1>Sports Gear Store</h1>
+    <p>Buy the Best Football and Basketball Equipment Online</p>
 </header>
 
 <nav>
-    <a href="#football">Football</a>
-    <a href="#basketball">Basketball</a>
-    <a href="#about">About Us</a>
+    <a href="#football">Football Gear</a>
+    <a href="#basketball">Basketball Gear</a>
+    <a href="#cart">Shopping Cart</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
 
     <!-- Football Section -->
-    <section id="football" class="section">
-        <div class="text">
-            <h2>Football News</h2>
-            <p>Stay updated with the latest football scores, highlights, and match previews. From local leagues to international competitions, we cover it all.</p>
-            <p>Read our in-depth articles, player profiles, and team strategies to stay ahead of the game!</p>
+    <section id="football">
+        <h2>Football Gear</h2>
+        <div class="product-category">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Football+Ball" alt="Football Ball">
+                <div class="product-info">
+                    <h3>Football Ball</h3>
+                    <p>High-quality leather football for all-weather play</p>
+                    <p class="price">$29.99</p>
+                    <a href="#cart" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Football+Cleats" alt="Football Cleats">
+                <div class="product-info">
+                    <h3>Football Cleats</h3>
+                    <p>Durable cleats for better traction and speed</p>
+                    <p class="price">$59.99</p>
+                    <a href="#cart" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Football+Jersey" alt="Football Jersey">
+                <div class="product-info">
+                    <h3>Football Jersey</h3>
+                    <p>Comfortable and stylish football jersey</p>
+                    <p class="price">$39.99</p>
+                    <a href="#cart" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
         </div>
-        <img src="https://via.placeholder.com/400x250?text=Football" alt="Football">
     </section>
 
     <!-- Basketball Section -->
-    <section id="basketball" class="section">
-        <div class="text">
-            <h2>Basketball News</h2>
-            <p>Get the latest on basketball leagues, star players, and game-changing moments. Whether it's the NBA or college basketball, we've got all the coverage you need!</p>
-            <p>Follow team rankings, player stats, and in-depth game analyses right here!</p>
+    <section id="basketball">
+        <h2>Basketball Gear</h2>
+        <div class="product-category">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Basketball+Ball" alt="Basketball Ball">
+                <div class="product-info">
+                    <h3>Basketball Ball</h3>
+                    <p>Official size and weight basketball for all levels</p>
+                    <p class="price">$24.99</p>
+                    <a href="#cart" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Basketball+Shoes" alt="Basketball Shoes">
+                <div class="product-info">
+                    <h3>Basketball Shoes</h3>
+                    <p>Enhanced grip and comfort for intense gameplay</p>
+                    <p class="price">$89.99</p>
+                    <a href="#cart" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Basketball+Jersey" alt="Basketball Jersey">
+                <div class="product-info">
+                    <h3>Basketball Jersey</h3>
+                    <p>Lightweight and breathable jersey for comfort</p>
+                    <p class="price">$34.99</p>
+                    <a href="#cart" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
         </div>
-        <img src="https://via.placeholder.com/400x250?text=Basketball" alt="Basketball">
     </section>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Sports Hub is dedicated to bringing the most current and accurate news from the world of football and basketball. Our team of passionate sports writers and analysts cover every angle, from game results to in-depth player and team profiles.</p>
+    <!-- Shopping Cart Section -->
+    <section id="cart">
+        <h2>Your Shopping Cart</h2>
+        <p>Your cart is empty. Add some items to your cart to proceed!</p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>If you have any questions or want to get in touch, feel free to reach out!</p>
-        <p>Email: <a href="mailto:info@sportshub.com">info@sportshub.com</a></p>
-        <p>Follow us on social media: <a href="https://twitter.com/sportshub" target="_blank">Twitter</a>, <a href="https://facebook.com/sportshub" target="_blank">Facebook</a></p>
+        <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+        <p>Email: <a href="mailto:info@sportsgearstore.com">info@sportsgearstore.com</a></p>
     </section>
 
 </div>
 
 <footer>
-    <p>&copy; 2024 Sports Hub | All Rights Reserved</p>
+    <p>&copy; 2024 Sports Gear Store | All Rights Reserved</p>
 </footer>
 
 </body>
